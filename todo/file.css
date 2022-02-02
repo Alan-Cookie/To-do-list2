@@ -1,0 +1,43 @@
+
+.close {
+	/*Изменим цвет и размер крестика*/
+	position: relative;
+	padding: 12px 5px 12px 5px;
+	background-color: silver;
+
+}
+/*Сделаем так, чтобы при наведении на крестик, он становился красным*/
+.close:hover {
+	background-color: red;
+}
+/*Изменим размер и цвет ul li, зададим ширину */
+ul li {
+	position: relative;
+	padding: 10px 8px 10px 20px;
+	background-color: silver;
+	width: 62px;
+	bottom: 85px;
+	/*Добавим многоточие, если текст длиннее width */
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	right: 35px;
+}
+/*Зададим размер и ширину заголовка*/
+.header {
+	position: relative;
+	padding: 12px 5px 12px 5px;
+	width: 247px;
+}
+input {
+	position: relative;
+	padding: 12px 8px 4px 10px;
+	left: 95px;
+}
+span {
+	position: relative;
+	padding: 10px 8px 4px 10px;
+	bottom: 25px;
+	left: 281px;
+}
+

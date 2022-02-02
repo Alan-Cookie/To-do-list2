@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <meta charset="utf-8" />
+    <!-- Придумаем и напишем заголовок-->
+    <title>To do list</title>
+
+</head>
+<!-- Перейдем к оформлению самой страницы -->
+<body style="background-color: #FFE4C4 ">
+    <div id="myDIV" class="header">
+        <h2 style="border:3px #66CDAA solid;">Список дел</h2>
+        <input style="border: 3px #8FBC8F solid; background-color: #FFFFE0 " type="text" id="myInput" placeholder="Напишите название дела" />
+        <span style="background-color: #8FBC8F; border: 3px #5F9EA0 solid " class="addBtn" onclick="newElement()">Добавить </span>
+        <!--Добавил заголвок h2  и обвел в рамочку
+            Добавил текстовое поле с помощью input, изменил цвет и обвел в рамочку -->
+    </div>
+    <!-- Создадим список ul и добавим элементы списка с помощтю тега li
+        Также с помощью onclick будем менять цвет на зеленый, если дело выполнено -->
+    <ul id="myUL">
+        <li onclick="this.style.background='green'" class="checked">Дело1</li>
+        <li onclick="this.style.background='green'">Дело2</li>
+        <li onclick="this.style.background='green'">Дело3</li>
+        <li onclick="this.style.background='green'">Дело4</li>
+        <li onclick="this.style.background='green'">Дело5</li>
+    </ul>
+
+    <!-- С помощью тега script подключаем js элемент к html -->
+    <script src="file.js"></script>
+    <!-- С помощью тега link подключаем css элемент к html -->
+    <link rel="stylesheet" href="file.css">
+</body>
+</html>
